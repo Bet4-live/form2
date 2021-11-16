@@ -1,0 +1,84 @@
+body{ background:#f6f6f6; 
+font-family:"tahoma"}
+
+.container{
+width:980px; 
+height:650px;
+margin:10px auto;
+border:1px dashed #bd652b;
+padding:20px 0 20px 40px;}
+
+section{
+width:450px; 
+height:220px; 
+float:left; 
+margin:0 40px 60px 0; }
+
+aside{
+width:450px; 
+height:120px; 
+float:left; 
+margin:0 40px 60px 0; }
+
+footer{
+width:980px; 
+height:100px; 
+float:left; 
+margin:0 40px 60px 0; }
+
+.baslikkutu{
+width:450px; 
+padding: 0 0 10px 0; 
+margin: 0 0 15px 0; 
+border-bottom: 2px solid #dd9d42;
+color:#104579; 
+font: bold 19px tahoma;}
+
+section input, aside input{
+width: 300px;
+padding: 5px; 
+margin: 10 0 0 0; 
+border: 1px dashed #a0a0a0; 
+color: #104579; 
+font-size: 14px;}
+.yabancıdil{
+	width:auto;
+}
+section input:hover{
+border: 1px dashed #bd652b; 
+background:#f0ddbc;}
+
+input.radio, input.checkbox{width:15px;}
+
+textarea{ 
+width:930px; 
+height:65px; 
+padding: 5px; 
+border: 1px solid #ddd; 
+color: #4b4b4b; 
+font-size: 14px;
+float:left;}
+
+button, input.gönder{
+width:100px; 
+padding:10px 25px; 
+margin: 0 30px 20px 0;
+color: #fff; 
+font-size: 14px;
+background: #24588f;
+cursor:pointer; 
+border:none;}
+
+tr:hover{color:#bd652b}
+
+tr:hover .siyah{color:#000;}
+
+input:focus, textarea:focus{outline:none}
+
+#askerlik,#digerdil,#digerbeceri{
+width:300px;
+padding:5px; 
+border:1px dashed #a0a0a0; 	
+color:#104579; 	
+font-size:14px;
+}

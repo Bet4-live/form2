@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FORM</title>
+<link rel="shortcut icon" href="plus.png" />
+<link href="form 2.css" rel="stylesheet" type="text/css" />
+<script src="script.js"></script>
+
+</head>
+<body>
+<form action="" method="get">
+<div class="container">
+
+<section>
+<div class="baslikkutu">Kişisel Bilgiler</div>
+<table width="450" height="220">
+	<tr>
+		<td width="145">Ad</td>
+		<td width="5">:</td>
+		<td width="300"><input name="" type="text" maxlength="20" placeholder="Adınızı giriniz." required="required" /></td>
+	</tr>
+	<tr>
+		<td>Soyad</td>
+		<td>:</td>
+		<td><input name="" type="text" maxlength="20" placeholder="Soyadınızı giriniz." required="required"  /></td>
+	</tr>
+	<tr>
+		<td>Doğum Tarihi</td>
+		<td>:</td>
+		<td><input name="" type="date"  value="" required="required" /></td>
+	</tr>
+	<tr>
+		<td>Telefon</td>
+		<td>:</td>
+		<td><input name="" type="text" pattern="[\(]\d{3}[\)][\s]\d{3}[\s]\d{2}[\s]\d{2}" placeholder="(xxx) xxx xx xx" required="required"  /></td>
+	</tr>
+	<tr>
+		<td>Mail Adresi</td>
+		<td>:</td>
+		<td><input name="" type="email" maxlength="50" placeholder="Mail Adresinizi giriniz." required="required"  /></td>
+	</tr>
+	<tr>
+		<td>Cinsiyet</td>
+		<td>:</td>
+		<td class="siyah">
+		<input id="" name="cinsiyet" type="radio" value="Erkek" class="radio" required="required" onclick="askerlikdurumu(this.id)"  />Erkek
+		<input id="kadin" name="cinsiyet" type="radio" value="Kadın" class="radio" required="required" onclick="askerlikdurumu(this.id)" />Kadın
+		<input id="askerlik" name="asker" type="hidden" placeholder="Askerlik durumunu giriniz." value="" />
+		</td>
+	</tr>
+</table>
+</section>
+
+<section>
+<div class="baslikkutu">Eğitim Durumu</div>
+<table width="450" height="220">
+	<tr>
+		<td width="145">İlokul</td>
+		<td width="5">:</td>
+		<td width="300"><input name="" type="text" maxlength="20" placeholder="Okuduğunuz ilokul giriniz."  required="required" /></td>
+	</tr>
+	<tr>
+		<td>Ortaokul</td>
+		<td>:</td>
+		<td><input name="" type="text" maxlength="20" placeholder="Okuduğunuz ortaokul giriniz."  required="required"  /></td>
+	</tr>
+	<tr>
+		<td>Lise</td>
+		<td>:</td>
+		<td><input name="" type="text" value="" maxlength="20" placeholder="Okuduğunuz lise giriniz." required="required"  /></td>
+	</tr>
+	<tr>
+		<td>Üniversite</td>
+		<td>:</td>
+		<td><input name="" type="text" maxlength="20" placeholder="Okuduğunuz üniversite giriniz." required="required"  /></td>
+	</tr>
+	<tr>
+		<td>Yüksek Lisans</td>
+		<td>:</td>
+		<td><input name="" type="text" maxlength="20" placeholder="Yüksek lisans yaptığınız üniversite giriniz."  required="required"  /></td>
+	</tr>
+	<tr>
+		<td>Yabancı Dil</td>
+		<td>:</td>
+		<td class="siyah" style="display: flex;">
+		  
+		<input class="yabancıdil" name="" type="checkbox" value="" />İngilizce
+		<input class="yabancıdil" name="" type="checkbox" value="" />Almanca
+		<input class="yabancıdil" name="" type="checkbox" value="" />Arapça
+		<input class="yabancıdil" name="" type="checkbox" value="" onclick="ackapat('digerdil')" />Diğer
+		<input id="digerdil" name="digerdil" type="hidden" placeholder="Diğer bildiğiniz dili giriniz." value="" />
+		</td>
+	</tr>
+</table>
+</section>
+
+
+<aside>
+<div class="baslikkutu">İlgi Alanları</div>
+<input name="" type="checkbox" value="" class="checkbox"/>Sinema<br/>
+<input name="" type="checkbox" value="" class="checkbox"/>Tiyatro<br/>
+<input name="" type="checkbox" value="" class="checkbox"/>Spor<br/>
+<input name="" type="checkbox" value="" class="checkbox"/>Kitap<br/>
+<input name="" type="checkbox" value="" class="checkbox" onclick="ackapat('digerilgi')" />Diğer
+<input id="digerilgi" name="digerilgi" type="hidden" placeholder="Diğer İlgi alanınızı giriniz." value="" />
+
+</aside>
+
+<aside>
+<div class="baslikkutu">Beceriler</div>
+
+<input name="" type="checkbox" value="" class="checkbox"/>Html<br/>
+<input name="" type="checkbox" value="" class="checkbox"/>Css<br/>
+<input name="" type="checkbox" value="" class="checkbox"/>Php<br/>
+<input name="" type="checkbox" value="" class="checkbox"/>Asp.net<br/>
+<input name="" type="checkbox" value="" class="checkbox"onclick="ackapat('digerbeceri')" />Diğer
+<input id="digerbeceri" name="digerbeceri" type="hidden" placeholder="Diğer becerinizi giriniz." value="" />
+
+</aside>
+
+<footer>
+<div class="baslikkutu">Düşünceleriniz</div>
+<textarea  required="required" ></textarea><br /><br />
+<button>Gönder</button>
+<input class="gönder" name="" type="reset" onclick="kapat()" />
+</footer>
+
+</div>
+</form>
+</body>
+</html>
